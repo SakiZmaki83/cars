@@ -81,6 +81,9 @@
                 <div class="title m-b-md">
                     Welcome to Cars Project
                 </div>
+                        <h3>Welcome, {{ $name }}. <br>
+                            I'am {{ $age }} years old.
+                         <h3>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
