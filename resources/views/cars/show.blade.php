@@ -1,21 +1,15 @@
-<!doctype html>
-<html>
-    <head>
-        
-        <title>car</title>
+@extends('layouts.master')
+
+@section('title')
+    {{$car->title}}
+@endsection
     
-    </head>
-    <body>
-        <h3>{{ $car->title }}</h3>
+        <h3><a href ="{{ route('cars') }}" >{{ $car->title }} </a> </h3>
         
             <p> The car {{ $car->title }} is producted by {{ $car->producer }}. <br>
                 This model has {{$car ->number_of_doors}} doors.
+                
             </p>
     
 
-
-
-
-
-    </body>
-</html>
+    

@@ -1,11 +1,10 @@
-<!doctype html>
-<html>
-    <head>
+@extends('layouts.master')
+@section('content')
         
-        <title>About</title>
-    
-    </head>
-    <body>
-       <h2>About us</h2>
-    </body>
-</html>
+       
+
+
+    <h2><em>About us</em></h2>
+
+
+ @endsection

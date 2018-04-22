@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Welcome to Cars Project
+                    Welcome to <a href="{{ route('cars') }}">Cars</a> Project
                 </div>
                         <h3>Welcome, {{ $name }}. <br>
                             I'am {{ $age }} years old.

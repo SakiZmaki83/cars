@@ -1,17 +1,14 @@
-<!doctype html>
-<html>
-    <head>
+@extends('layouts.master')
+@section('content')
         
-        <title>cars</title>
-    
-    </head>
-    <body>
-       
-        <ul>
-            @foreach($cars as $car)
-            <li><a href="{{ route('single-car',[ 'id' => $car->id]) }}" > {{ $car->title }} </a> </li>
-            @endforeach
-        </ul>
 
-    </body>
-</html>
+    
+       <div class="cars">
+      
+    @foreach($cars as $car)
+          <li><a href="{{ route('single-car',[ 'id' => $car->id]) }}" > {{ $car->title }} </a></li>
+           
+     
+       </div>
+    @endforeach
+@endsection
